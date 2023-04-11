@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CititesManager.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:CititesManager.WebAPI.Controllers.v1.CitiesController.GetCities">
+            <summary>
+            Get the list of cities (city ID and city name) currently in the 'Cities' table
+            </summary>
+            <returns>The list of cities</returns>
+        </member>
+        <member name="M:CititesManager.WebAPI.Controllers.v1.CitiesController.GetCity(System.Guid)">
+            <summary>
+            Get a single city value based on the given ID
+            </summary>
+            <param name="id">The CityID to match</param>
+            <returns>The matching city if succesful, error if not</returns>
+        </member>
+        <member name="M:CititesManager.WebAPI.Controllers.v1.CitiesController.PutCity(System.Guid,CititesManager.WebAPI.Models.City)">
+            <summary>
+            Update data for a specific city
+            </summary>
+            <param name="id">CityID to match</param>
+            <param name="city">Updated name of matching city</param>
+            <returns>Empty result is succesful, error is not</returns>
+        </member>
+        <member name="M:CititesManager.WebAPI.Controllers.v1.CitiesController.PostCity(CititesManager.WebAPI.Models.City)">
+            <summary>
+            Insert a new city into the databse
+            </summary>
+            <param name="city">City to insert</param>
+            <returns>Inserted city if succesful, error if not</returns>
+        </member>
+        <member name="M:CititesManager.WebAPI.Controllers.v1.CitiesController.DeleteCity(System.Guid)">
+            <summary>
+            Delete a city from the database
+            </summary>
+            <param name="id">CityID to match</param>
+            <returns>Empty result if succesful, error if not</returns>
+        </member>
+        <member name="M:CititesManager.WebAPI.Controllers.v2.CitiesController.GetCities">
+            <summary>
+            Get the list of cities (city name) currently in the 'Cities' table
+            </summary>
+            <returns>The list of cities (city name only)</returns>
+        </member>
+        <member name="T:CititesManager.WebAPI.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:CititesManager.WebAPI.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CititesManager.WebAPI.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CititesManager.WebAPI.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:CititesManager.WebAPI.Migrations.CityNameRequired">
+            <inheritdoc />
+        </member>
+        <member name="M:CititesManager.WebAPI.Migrations.CityNameRequired.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CititesManager.WebAPI.Migrations.CityNameRequired.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CititesManager.WebAPI.Migrations.CityNameRequired.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
